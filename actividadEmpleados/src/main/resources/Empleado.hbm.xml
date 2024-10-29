@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+    <class name="es.nebrija.actividadEmpleados.entidades.Empleado" table="Empleado">
+        <id name="idEmpleado" column="idEmpleado">
+            <generator class="native" />
+        </id>
+        <property name="nombre" column="nombre" />
+        <property name="apellido" column="apellido" />
+        <property name="salario" column="salario" />
+    </class>
+</hibernate-mapping>

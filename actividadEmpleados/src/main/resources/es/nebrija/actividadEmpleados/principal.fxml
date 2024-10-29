@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.nebrija.actividadEmpleados.EmpleadoController">
+    <children>
+        <Label text="Lista de Empleados" />
+
+        <TableView fx:id="empleadosTable">
+            <columns>
+                <TableColumn fx:id="colId" text="ID" />
+                <TableColumn fx:id="colNombre" text="Nombre" />
+                <TableColumn fx:id="colApellido" text="Apellido" />
+                <TableColumn fx:id="colSalario" text="Salario" />
+            </columns>
+        </TableView>
+
+        <HBox alignment="CENTER" spacing="10.0">
+            <Button text="Añadir Empleado" onAction="#addEmpleado" />
+            <Button text="Editar Empleado" onAction="#editEmpleado" />
+        </HBox>
+    </children>
+</VBox>
+

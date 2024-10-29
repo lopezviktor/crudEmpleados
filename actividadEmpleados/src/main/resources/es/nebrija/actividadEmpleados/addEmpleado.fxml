@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="291.0" prefWidth="453.0" spacing="15.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.nebrija.actividadEmpleados.EditEmpleadoController">
+    <children>
+         <Label style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Añadir Empleado" />
+      <HBox alignment="CENTER" prefHeight="34.0" prefWidth="453.0" spacing="15.0">
+         <children>
+            <Label text="Nombre" />
+            <TextField fx:id="txtNombre" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="34.0" prefWidth="453.0" spacing="15.0">
+         <children>
+            <Label text="Apellidos" />
+            <TextField fx:id="txtApellidos" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="34.0" prefWidth="453.0" spacing="15.0">
+         <children>
+            <Label text="Dirección" />
+            <TextField fx:id="txtDireccion" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="34.0" prefWidth="453.0" spacing="15.0">
+         <children>
+            <Label text="Telefono" />
+            <TextField fx:id="txtTelefono" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="34.0" prefWidth="453.0" spacing="15.0">
+         <children>
+            <Label text="Salario" />
+            <TextField fx:id="txtSalario" />
+         </children>
+      </HBox>
+      <Button fx:id="btnAddEmpleado" mnemonicParsing="false" onAction="#AddUsuario" text="Añadir">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Button>
+    </children>
+</VBox>
