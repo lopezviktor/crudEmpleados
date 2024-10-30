@@ -6,7 +6,9 @@ module es.nebrija.actividadEmpleados {
     requires jakarta.persistence; // Si usas la API JPA (opcional)
 
     exports es.nebrija.actividadEmpleados;
-
-    opens es.nebrija.actividadEmpleados to
-        javafx.fxml;
+    exports es.nebrija.actividadEmpleados.dao;
+    exports es.nebrija.actividadEmpleados.entidades;
+    
+    opens es.nebrija.actividadEmpleados to javafx.fxml;
+    opens es.nebrija.actividadEmpleados.entidades to org.hibernate.orm.core;
 }

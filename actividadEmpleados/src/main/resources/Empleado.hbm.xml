@@ -10,6 +10,8 @@
         </id>
         <property name="nombre" column="nombre" />
         <property name="apellido" column="apellido" />
+        <property name="direccion" column="direccion" />
+        <property name="telefono" column="telefono" />
         <property name="salario" column="salario" />
     </class>
 </hibernate-mapping>

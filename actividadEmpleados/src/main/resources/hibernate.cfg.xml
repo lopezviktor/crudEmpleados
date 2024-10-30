@@ -18,5 +18,6 @@
         <!-- Actualizar automáticamente las tablas de la base de datos según las entidades definidas -->
         <property name="hibernate.hbm2ddl.auto">update</property>
 
+		<mapping resource="Empleado.hbm.xml"/>		
     </session-factory>
 </hibernate-configuration>

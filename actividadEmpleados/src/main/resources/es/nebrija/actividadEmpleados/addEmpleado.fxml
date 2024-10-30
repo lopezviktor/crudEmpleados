@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="291.0" prefWidth="453.0" spacing="15.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.nebrija.actividadEmpleados.EditEmpleadoController">
+<VBox alignment="CENTER" prefHeight="291.0" prefWidth="453.0" spacing="15.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.nebrija.actividadEmpleados.AddController">
     <children>
          <Label style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Añadir Empleado" />
       <HBox alignment="CENTER" prefHeight="34.0" prefWidth="453.0" spacing="15.0">

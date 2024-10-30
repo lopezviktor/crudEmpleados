@@ -5,17 +5,20 @@ public class Empleado {
 	private int idEmpleado;
 	private String nombre;
 	private String apellido;
+	private String direccion;
+	private String telefono;
 	private double salario;
 	
 	public Empleado() {
 		
 	}
-	
-	public Empleado(int idEmpleado, String nombre, String apellido, double salario) {
+
+	public Empleado( String nombre, String apellido, String direccion, String telefono, double salario) {
 		super();
-		this.idEmpleado = idEmpleado;
 		this.nombre = nombre;
 		this.apellido = apellido;
+		this.direccion = direccion;
+		this.telefono = telefono;
 		this.salario = salario;
 	}
 
@@ -29,6 +32,14 @@ public class Empleado {
 
 	public String getApellido() {
 		return apellido;
+	}
+
+	public String getDireccion() {
+		return direccion;
+	}
+
+	public String getTelefono() {
+		return telefono;
 	}
 
 	public double getSalario() {
@@ -47,7 +58,17 @@ public class Empleado {
 		this.apellido = apellido;
 	}
 
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
+	}
+
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
+	
+	
 }
