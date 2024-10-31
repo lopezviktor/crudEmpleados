@@ -9,7 +9,7 @@
             <generator class="native" />
         </id>
         <property name="nombre" column="nombre" />
-        <property name="apellido" column="apellido" />
+        <property name="apellidos" column="apellidos" />
         <property name="direccion" column="direccion" />
         <property name="telefono" column="telefono" />
         <property name="salario" column="salario" />

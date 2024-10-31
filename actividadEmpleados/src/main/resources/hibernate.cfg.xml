@@ -19,5 +19,6 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
 
 		<mapping resource="Empleado.hbm.xml"/>		
+		<mapping class="es.nebrija.actividadEmpleados.entidades.Usuario"/>
     </session-factory>
 </hibernate-configuration>

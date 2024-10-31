@@ -16,7 +16,7 @@ public class FormularioController {
     private Button btnEditarEmpleado;
 
     @FXML
-    private TableColumn<?, ?> idApellido;
+    private TableColumn<?, ?> idApellidos;
 
     @FXML
     private TableColumn<?, ?> idCol;
