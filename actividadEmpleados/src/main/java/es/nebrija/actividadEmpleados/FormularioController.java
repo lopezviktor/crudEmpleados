@@ -9,12 +9,21 @@ import javafx.scene.control.TableColumn;
 
 public class FormularioController {
 
+	/*
+	 * POSIBLEMENTE NO HAGA NADA -> BORRAR
+	 * 
+	 */
+	
+	
     @FXML
     private Button btnAddEmpleado;
 
     @FXML
     private Button btnEditarEmpleado;
 
+    @FXML
+    private Button btnMenu;
+    
     @FXML
     private TableColumn<?, ?> idApellidos;
 
@@ -41,5 +50,10 @@ public class FormularioController {
     @FXML
     void switchToEditarEmpleado(ActionEvent event) throws IOException{
     	App.setRoot("editEmpleado");
+    }
+    
+    @FXML
+    void switchToMenu(ActionEvent event) throws IOException {
+    	App.setRoot("menu");
     }
 }

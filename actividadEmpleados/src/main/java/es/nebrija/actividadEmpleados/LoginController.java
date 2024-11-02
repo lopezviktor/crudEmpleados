@@ -34,7 +34,7 @@ public class LoginController {
     	
     	if (usuario != null) {
     		showAlert("Login correcto", "Bienvenido" + usuario.getNombreUsuario());
-    		FXMLLoader loader = new FXMLLoader(getClass().getResource("formulario.fxml"));
+    		FXMLLoader loader = new FXMLLoader(getClass().getResource("menu.fxml"));
     		try {
     	        Stage stage = (Stage) txtNombreUsuario.getScene().getWindow();
     	        stage.getScene().setRoot(loader.load());

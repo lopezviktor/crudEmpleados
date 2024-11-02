@@ -10,7 +10,16 @@
 
 <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="15.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.nebrija.actividadEmpleados.ListaEmpleadosController">
     <children>
-         <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Formulario de Empleados" />
+      <HBox alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="600.0">
+         <children>
+               <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Formulario de Empleados" />
+            <Button fx:id="btnMenu" onAction="#switchToMenu" text="Menu">
+               <HBox.margin>
+                  <Insets left="150.0" right="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
 
          <!-- TableView para listar los empleados -->
          <TableView fx:id="tableViewEmpleados" prefHeight="300.0" prefWidth="500.0">
@@ -27,8 +36,8 @@
          <!-- Botones de acciones -->
          <HBox alignment="CENTER" spacing="10.0">
              <children>
-                <Button fx:id="btnEditarEmpleado" text="Editar" onAction="#switchToEditarEmpleado" />
-                <Button fx:id="btnEliminarEmpleado" text="Eliminar" onAction="#eliminarEmpleado" />
+                <Button fx:id="btnEditarEmpleado" onAction="#switchToEditarEmpleado" text="Editar" />
+                <Button fx:id="btnEliminarEmpleado" onAction="#eliminarEmpleado" text="Eliminar" />
              </children>
          </HBox>
     </children>

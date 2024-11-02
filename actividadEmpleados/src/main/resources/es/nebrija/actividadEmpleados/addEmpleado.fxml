@@ -12,7 +12,10 @@
          <Label style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Añadir Empleado" />
       <HBox alignment="CENTER" prefHeight="34.0" prefWidth="453.0" spacing="15.0">
          <children>
-            <Label text="Nombre" />
+            <Label text="Nombre">
+               <HBox.margin>
+                  <Insets left="8.0" />
+               </HBox.margin></Label>
             <TextField fx:id="txtNombre" />
          </children>
       </HBox>
@@ -36,14 +39,28 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="34.0" prefWidth="453.0" spacing="15.0">
          <children>
-            <Label text="Salario" />
-            <TextField fx:id="txtSalario" />
+            <Label text="Salario">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin></Label>
+            <TextField fx:id="txtSalario">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></TextField>
          </children>
       </HBox>
-      <Button fx:id="btnAddEmpleado" mnemonicParsing="false" onAction="#AddUsuario" text="Añadir">
-         <padding>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </padding>
-      </Button>
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="453.0" spacing="10.0">
+         <children>
+            <Button fx:id="btnAddEmpleado" mnemonicParsing="false" onAction="#AddUsuario" text="Añadir">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnSwitchToMenu" mnemonicParsing="false" onAction="#SwitchToMenu" text="Menu" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
     </children>
 </VBox>
