@@ -15,9 +15,8 @@ public class Test extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("menu.fxml")); // Carga la vista de login
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("login.fxml"));
             Parent root = loader.load();
-            primaryStage.setTitle("Login");
             primaryStage.setScene(new Scene(root));
             primaryStage.show();
         } catch (Exception e) {

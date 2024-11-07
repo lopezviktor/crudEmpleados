@@ -28,7 +28,7 @@ public class EmpleadoDao {
 	            try {
 	                transaction.rollback();
 	            } catch (RuntimeException rollbackException) {
-	                System.err.println("Error al realizar el rollback: " + rollbackException);
+	                System.err.println("Error: " + rollbackException);
 	            }
 	        }
 	        e.printStackTrace();

@@ -33,7 +33,8 @@ public class LoginController {
     	Usuario usuario = usuarioDao.validarUsuario(nombreUsuario, password);
     	
     	if (usuario != null) {
-    		showAlert("Login correcto", "Bienvenido" + usuario.getNombreUsuario());
+    		Session.getInstance().setUsuario(usuario);
+    		showAlert("Login correcto", "Bienvenido " + usuario.getNombreUsuario());
     		FXMLLoader loader = new FXMLLoader(getClass().getResource("menu.fxml"));
     		try {
     	        Stage stage = (Stage) txtNombreUsuario.getScene().getWindow();

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hibernate-configuration>
     <session-factory>
-
         <!-- Configuración de la conexión a la base de datos -->
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3307/empleadosBD</property>

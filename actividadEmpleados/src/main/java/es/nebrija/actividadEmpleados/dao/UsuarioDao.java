@@ -52,4 +52,16 @@ public class UsuarioDao {
         return usuario;
 	}
 
+	//MODIFICAR USUARIO
+	public void modificarUsuario(Usuario usuario) {
+		Transaction transaction = null;
+		try (Session session = factory.openSession()){
+			transaction = session.beginTransaction();
+			session.merge(usuario);
+			transaction.commit();
+            System.out.println("Usuario actualizado correctamente");
+		}catch (Exception e) {
+            e.printStackTrace();
+        }
+	}
 }
