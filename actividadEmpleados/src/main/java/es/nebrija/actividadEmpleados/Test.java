@@ -19,6 +19,8 @@ public class Test extends Application {
             Parent root = loader.load();
             primaryStage.setScene(new Scene(root));
             primaryStage.show();
+            primaryStage.setWidth(300); 
+            primaryStage.setHeight(400); 
         } catch (Exception e) {
             e.printStackTrace();
         }
