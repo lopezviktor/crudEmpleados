@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="400.0" prefWidth="700.0" spacing="15.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.nebrija.actividadEmpleados.ListaEmpleadosController">
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="548.0" spacing="15.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.nebrija.actividadEmpleados.ListaEmpleadosController">
     <children>
-      <HBox alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="700.0" spacing="50.0">
+      <HBox alignment="TOP_RIGHT" prefHeight="26.0" prefWidth="700.0">
          <children>
-               <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Formulario de Empleados">
+               <Label alignment="CENTER" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Formulario de Empleados" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font></Label>
